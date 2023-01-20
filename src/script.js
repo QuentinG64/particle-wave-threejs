@@ -1,6 +1,6 @@
 import "./style.css";
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 // import * as dat from "lil-gui";
 
 // Set up the ShaderMaterial with a custom vertex shader and fragment shader
@@ -122,8 +122,8 @@ camera.position.z = 8;
 scene.add(camera);
 
 // Controls
-const controls = new OrbitControls(camera, canvas);
-controls.enableDamping = true;
+// const controls = new OrbitControls(camera, canvas);
+// controls.enableDamping = true;
 
 /**
  * Renderer
@@ -167,8 +167,8 @@ const tick = () => {
 
   particlesGeometry.attributes.position.needsUpdate = true;
 
-  // Update controls
-  controls.update();
+  // // Update controls
+  // controls.update();
 
   // Render
   renderer.render(scene, camera);
